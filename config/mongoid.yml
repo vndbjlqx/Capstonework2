@@ -3,7 +3,7 @@ development:
     default:
       database: capstone_work2_development
       hosts:
-        - <%= ENV['MONGO_HOST'] ||="localhost:27017"%>
+        - <%= ENV['MONGO_HOST'] ||="localhost:27017" %>
       options:
   options:
 
