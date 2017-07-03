@@ -6,7 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Foo.all.each { |foo| foo.destroy }
+Bar.all.each { |bar| bar.destroy }
+City.all.each { |city| city.destroy }
+State.all.each { |state| state.destroy }
+
 Foo.create(:name=>"foo100")
-Bar.create(:name=>"test100")
+Bar.create(:name=>"bar100")
 City.create(:name => "Baltimore")
 State.create(:name => "Maryland")
